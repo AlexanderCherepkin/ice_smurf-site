@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:regular,500,600,700&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Fredoka:regular&display=swap&subset=cyrillic-ext');
+
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 20rem;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefdfc;
+    font-size: 0.875rem;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: 72.5rem;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+}
+
+.container-indentation {
+    padding: 8.5rem 0.9375rem 9.3rem 0.9375rem;
+}
+
+.title {
+    width: 25.8125rem;
+    color: #150101;
+    font-family: 'Hind Madurai';
+    font-size: clamp(2rem, 1.848rem + 0.76vw, 2.763rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.05256rem;
+}
+
+.menu-button {
+    display: none;
+}
+
+.head {
+    background-color: #74c24fab;
+    background-image: url('../images/png/bg-fons.png');
+    background-repeat: no-repeat;
+    background-position: clamp(6.25rem, 5rem + 6.25vw, 12.5rem) clamp(-19.375rem, -7.5rem + -9.38vw, -8.75rem);
+    background-size: 90%;
+    padding-bottom: 3.13rem;
+}
+
+.head__logo {
+    max-width: 70.3125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.62rem 0 12.25rem 0;
+}
+
+.logo {
+    flex: 0 0 5.6875rem;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu__list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list-item:not(:last-child) {
+    margin: 0 2.5rem 0 0;
+}
+
+.menu__list-link {
+    color: #150101;
+    font-size: clamp(0.875rem, 0.85rem + 0.13vw, 1rem);
+    font-weight: 500;
+}
+
+.menu__list-link:hover {
+    color: #D23166;
+}
+
+.menu__list-link--active {
+    color: #D23166;
+}
+
+.btn-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: clamp(2rem, 1.787rem + 1.06vw, 3.063rem);
+    padding: 0 clamp(2.5rem, 2.376rem + 0.62vw, 3.12rem);
+    font-family: 'Hind Madurai';
+    background-color: #D23166;
+    border-radius: 0.3125rem;
+    font-weight: 700;
+    color: #FAFAFA;
+    font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
+    text-transform: capitalize;
+}
+
+.ice {
+    display: flex;
+    max-height: 21.25rem;
+}
+
+.ice__content {
+    color: #0F0101;
+}
+
+.cream-color {
+    color: #D23166;
+}
+
+.ice__content-text {
+    font-weight: 500;
+    letter-spacing: 0.0875rem;
+}
+
+.ice__content-title {
+    width: clamp(18.75rem, 14.188rem + 22.81vw, 41.563rem);
+    height: 8.125rem;
+    color: #0F0101;
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+    font-weight: 700;
+    line-height: 3.31769rem;
+    margin-bottom: 1.19rem;
+}
+
+.ice__content-subtext {
+    font-family: 'Hind Madurai';
+    font-size: clamp(1rem, 0.975rem + 0.13vw, 1.125rem);
+    line-height: 1.6875rem;
+    font-weight: 500;
+}
+
+.img-bg {
+    max-width: clamp(15.75rem, 15rem + 15.75vw, 157.5rem);
+}
+
+.btn-head {
+    margin-top: -6.13rem;
+}
+
+.ice__bgimg {
+    transform: translateY(-12.5rem);
+}
+
+.img-fon {
+    transform: translate(-200px, -400px);
+    max-width: clamp(25rem, -7.5rem + 162.5vw, 187.5rem);
+}
+
+.services {
+    background-color: #e3e2d8;
+}
+
+.services__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -1.22rem;
+    padding: 6.22rem 0;
+}
+
+.services-icon {
+    flex: 0 0 3.18763rem;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2.05rem;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 25%;
+    padding: 0 1.22rem;
+    text-align: center;
+}
+
+.item-services-title {
+    text-align: center;
+    margin-bottom: 0.56rem;
+    font-family: 'Hind Madurai';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.item-services-text {
+    font-family: 'Hind Madurai';
+}
+
+.liders {
+    background-color: #74c24fab;
+}
+
+.title-liders {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.liders-items {
+    display: flex;
+    justify-content: space-between;
+    color: #150101;
+}
+
+.liders__item-text {
+    width: clamp(20rem, 18.275rem + 7.43vw, 27.625rem);
+    height: 3.635rem;
+    font-size: clamp(0.9rem, 0.88rem + 0.1vw, 1rem);
+    line-height: 1.5rem;
+    margin-bottom: 2.7rem;
+}
+
+.btn-liders,
+.btn-footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: clamp(2rem, 1.787rem + 1.06vw, 3.063rem);
+    padding: 0 clamp(2.5rem, 2.376rem + 0.62vw, 3.12rem);
+    font-family: 'Hind Madurai';
+    background-color: #D23166;
+    border-radius: 0.3125rem;
+    font-weight: 700;
+    color: #FAFAFA;
+    font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.lider-icon {
+    width: clamp(28.125rem, 23.75rem + 21.88vw, 50rem);
+}
+
+.product-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.product__tab {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-bottom: 3.12rem;
+}
+
+.tab--active {
+    color: #ee0854;
+    opacity: 1;
+}
+
+.tab--active::after {
+    display: block;
+    content: "";
+    width: 5rem;
+    height: 0.125rem;
+    background-color: #ee0854;
+    margin-top: 0.3125rem;
+}
+
+.tab:hover {
+    color: #ee0854;
+    opacity: 1;
+}
+
+.product-left,
+.product-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7.56rem;
+}
+
+.product-img {
+    width: clamp(18.75rem, 14.953rem + 18.99vw, 37.5rem);
+}
+
+.product-praice {
+    font-size: 1rem;
+    font-family: 'Hind Madurai';
+}
+
+.product-praice__title {
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-bottom: 0.69rem;
+}
+
+.product-praice__text {
+    width: clamp(20rem, 18.304rem + 8.48vw, 28.375rem);
+    min-height: 4.1875rem;
+    margin-bottom: 1.75rem;
+
+}
+
+.product-praice__texts {
+    display: flex;
+    flex-direction: row;
+}
+
+.sum {
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sum-offsale {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    padding: 5px 0 0 5px;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #0A0808;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.38rem 2rem 7.13rem;
+    color: #fff;
+}
+
+.footer__block-link {
+
+    padding-top: 6.25rem;
+    padding-left: 2.31rem;
+}
+
+.foot-item__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem
+}
+
+.foot-ico {
+    margin-bottom: 1.5rem;
+}
+
+.footer__text {
+    width: 12.5375rem;
+    height: 2.9375rem;
+    font-size: 0.75rem;
+    line-height: 1.04763rem;
+    letter-spacing: 0.0075rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.footer__subtext {
+    margin-bottom: 0.3rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+}
+
+.ico-social:not(:last-child) {
+    margin-right: 15px;
+}
+
+.item-text {
+    padding-top: 6rem;
+}
+
+.foot-text {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.81rem;
+}
+
+.form-search {
+    position: relative;
+}
+
+.input-search {
+    width: 18rem;
+    height: 3.063rem;
+    background-color: transparent;
+    border-top-left-radius: 0.3125rem;
+    border-bottom-left-radius: 0.3125rem;
+    margin-bottom: 1.24rem;
+    border: 0.03125rem solid rgba(255, 255, 255, 0.199);
+}
+
+.btn-footer {
+    height: 3.063rem;
+    margin-left: -0.925rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-search::placeholder {
+    padding-left: 0.625rem;
+}
+
+.card {
+    display: flex;
+
+}
+
+.card-ico:not(:last-child) {
+    margin-right: 0.9375rem;
+}
+
+
+
+
+
+
+
+
+/*=============Adaptyve site ==========================*/
+@media(max-width: 1360px) {
+    .head {
+        background-position: 200px;
+        background-size: 80%;
+        padding-bottom: 3.13rem;
+    }
+}
+
+@media(max-width: 1045px) {
+    .services__items {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-right: 0;
+    }
+
+    .footer__block {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem
+    }
+}
+
+@media(max-width: 940px) {
+    .img-fon {
+        transform: translate(-270px, -400px);
+    }
+
+    .ice-title {
+        position: relative;
+    }
+
+    .ice__content-subtext {
+        font-size: 0.875rem;
+    }
+
+    .services__items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 3.1rem 0;
+        flex: 1 0 55%;
+    }
+
+    .services__item {
+        flex: 0 0 35%;
+    }
+
+    .container-indentation {
+        padding: 4.5rem 0.9375rem 3.3rem 0.9375rem;
+    }
+
+    .footer__block {
+        padding: 2.38rem 1rem 3.13rem;
+    }
+
+    .item-text {
+        padding-top: 3rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .logo {
+        flex: 0 1 5.6875rem;
+    }
+
+    .menu__list {
+        gap: 1.2rem;
+        justify-content: center;
+    }
+
+    .menu__list-link--active {
+        margin-left: 2.5rem;
+    }
+
+    .head__logo {
+        padding: 0.22rem 0 7.25rem 0;
+    }
+
+    .ice {
+        min-height: 21.25rem;
+    }
+
+    .ice__content-title {
+        line-height: 2.31769rem;
+        margin-bottom: 0;
+    }
+
+    .btn-content {
+        position: absolute;
+        top: 16%;
+    }
+
+    .btn-head {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translateY(0px);
+    }
+
+    .img-bg {
+        transform: translate(-80px, 150px);
+    }
+
+    .img-fon {
+        display: none;
+    }
+
+    .liders-items {
+        flex-direction: column;
+    }
+
+    .lider-icon {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    /***********/
+    .tab {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        position: relative;
+        top: 0.625rem;
+        left: 0;
+        right: 0;
+        width: 3.125rem;
+        height: 3.125rem;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 0.125rem solid #903b90;
+        margin-right: 0;
+    }
+
+    .menu-button small,
+    .menu-button small::before,
+    .menu-button small::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -12.5px;
+        width: 1.5625rem;
+        height: 0.125rem;
+        background-color: #1900fa;
+        border: none;
+    }
+
+    .menu-button small::before,
+    .menu-button small::after {
+        content: '';
+        display: block;
+        transition: .5s;
+    }
+
+    .menu-button small::before {
+        transform: translateY(-0.3125rem);
+    }
+
+    .menu-button small::after {
+        transform: translateY(0.3125rem);
+    }
+
+    .menu-button__active small {
+        height: 0;
+    }
+
+    .menu-button__active small:after {
+        transform: rotate(-45deg);
+    }
+
+    .menu-button__active small:before {
+        transform: rotate(45deg);
+    }
+
+    .menu {
+        transition: .9s;
+        transform-origin: bottom;
+        transform: scaleX(0) translateY(-300%);
+        opacity: 0;
+    }
+
+    .menu--active {
+        transition: .5s;
+        transform: scaleX(1) translateX(0%);
+        opacity: 1;
+    }
+
+
+    /**********/
+
+    .foot-ico {
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width: 570px) {
+    .head__logo {
+        position: relative;
+    }
+
+    .btn-content {
+        position: absolute;
+        top: 50%;
+    }
+
+    .img-bg {
+        width: clamp(6.25rem, -9.75rem + 80vw, 18.75rem);
+    }
+
+    .btn-head {
+        transform: translateY(230px);
+    }
+
+    .ice__content-title {
+        height: 6.125rem;
+    }
+
+    .title-liders {
+        width: 20.8125rem;
+    }
+
+    .services__items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: space-between;
+        gap: 15px;
+    }
+
+    .footer__block-link {
+        padding-top: 3.25rem;
+        padding-left: 1.31rem;
+    }
+
+    .input-search {
+        width: 15rem;
+        height: 3.063rem;
+    }
+}
+
+@media(max-width: 425px) {
+    .menu__list-item:not(:last-child) {
+        margin: 0 1.6rem 0 0;
+    }
+
+    .input-search {
+        width: 12rem;
+        height: 3.063rem;
+    }
+
+}
+
+@media(max-width: 395px) {
+    .head {
+        background-image: none;
+        padding-bottom: 5.625rem;
+    }
+
+    .logo {
+        transform: translateY(-2.8125rem);
+    }
+
+    .menu__list {
+        display: block;
+
+    }
+
+    .menu {
+        margin-top: 0.9375rem;
+    }
+
+    .menu__list-link {
+        margin-left: 0;
+        margin-bottom: 1.5625rem;
+        font-size: 1rem;
+    }
+
+    .ice {
+        margin-top: -6.25rem;
+    }
+
+    .ice__content-title {
+        margin-bottom: -50px;
+    }
+
+    .img-bg {
+        display: none;
+    }
+
+    .ice__content-subtext {
+        padding: 3rem 1rem 0 0;
+    }
+
+    .liders__item-text {
+        padding-right: 0.9375rem;
+    }
+
+    .input-search {
+        width: 10rem;
+        height: 3.063rem;
+    }
+
+    .btn-footer {
+        padding: 0 clamp(1.5rem, 2.376rem + 0.62vw, 2rem);
+    }
+}
